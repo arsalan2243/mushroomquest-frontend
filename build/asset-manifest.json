@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.785dc249.css",
+    "main.js": "/static/js/main.20b75b10.js",
+    "static/media/nature.png": "/static/media/nature.f25f5503eef43f99009e.png",
+    "static/media/cap-shapes.png": "/static/media/cap-shapes.02b08778942e14878185.png",
+    "static/media/stem-shapes.png": "/static/media/stem-shapes.eb56e337ea5c83b9604f.png",
+    "static/media/underside-type.png": "/static/media/underside-type.21bbe089721647788f8a.png",
+    "static/media/mushroom-shapes.png": "/static/media/mushroom-shapes.048b49f6e8d04b0a1e30.png",
+    "static/media/collection.png": "/static/media/collection.75d25a5582318cfd9cf6.png",
+    "static/media/phone.png": "/static/media/phone.ab6b8aa0c15478b45338.png",
+    "static/media/education.png": "/static/media/education.44182ed98e2b52c5c478.png",
+    "static/media/mushrooms4.mp4": "/static/media/mushrooms4.b1e93bbcc0aad2244933.mp4",
+    "static/media/gills-connections.png": "/static/media/gills-connections.60d53fca73aee44e8932.png",
+    "static/media/veils.png": "/static/media/veils.0109ef868131f451bba3.png",
+    "static/media/mushroom-diagram.jpg": "/static/media/mushroom-diagram.e0985c66a56d793147e8.jpg",
+    "static/media/shape-irregular.jpg": "/static/media/shape-irregular.7a925c5af0cc36727fc5.jpg",
+    "static/media/about.jpg": "/static/media/about.37e5cbda5ca34b77bac3.jpg",
+    "static/media/MushroomQuest.png": "/static/media/MushroomQuest.3bc0abbe38fbe4df3681.png",
+    "static/media/shape-regular.jpeg": "/static/media/shape-regular.f25ce8a8714698fbea78.jpeg",
+    "index.html": "/index.html",
+    "main.785dc249.css.map": "/static/css/main.785dc249.css.map",
+    "main.20b75b10.js.map": "/static/js/main.20b75b10.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.785dc249.css",
+    "static/js/main.20b75b10.js"
+  ]
+}
