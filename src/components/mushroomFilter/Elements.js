@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import {Link} from 'react-router-dom'
 export const Select = styled.select`
 
 padding:16px 16px;

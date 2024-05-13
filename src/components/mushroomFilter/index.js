@@ -20,22 +20,6 @@ const Mushroom = () => {
   }, []);
 
   useEffect(() => {
-    filterAccordingly();
-  }, [selected]);
-
-  const handleRadioChange = (event) => {
-    const value = event.target.value;
-    if (value === "regular") {
-      setSelected({ regular: true });
-    } else {
-      setSelected({ regular: false });
-    }
-  };
-
-  const handleColorChange = (event) => {
-    setSelected({ ...selected, color: event.target.value });
-  };
-  const filterAccordingly = () => {
     const newSetMushroom = mushroomsData.filter((mushroom) => {
       let matchesAllCriteria = true;
       for (let key in selected) {
@@ -86,7 +70,72 @@ const Mushroom = () => {
     });
 
     setMushrooms(newSetMushroom);
+  }, [selected]);
+
+  const handleRadioChange = (event) => {
+    const value = event.target.value;
+    if (value === "regular") {
+      setSelected({ regular: true });
+    } else {
+      setSelected({ regular: false });
+    }
   };
+
+  const handleColorChange = (event) => {
+    setSelected({ ...selected, color: event.target.value });
+  };
+  // const filterAccordingly = () => {
+  //   const newSetMushroom = mushroomsData.filter((mushroom) => {
+  //     let matchesAllCriteria = true;
+  //     for (let key in selected) {
+  //       if (selected[key] !== null) {
+  //         if (
+  //           key === "capColor" ||
+  //           key === "capCondition" ||
+  //           key === "viscos"
+  //         ) {
+  //           if (!mushroom["pileus"].includes(selected[key])) {
+  //             matchesAllCriteria = false; // If color, condition, or viscos is missing, exclude mushroom
+  //             break;
+  //           }
+  //         } else if (
+  //           key === "undersideColor" ||
+  //           key === "undersideCondition" ||
+  //           key === "gillType"
+  //         ) {
+  //           if (!mushroom["lamellae"].includes(selected[key])) {
+  //             matchesAllCriteria = false; // If color, condition, or viscos is missing, exclude mushroom
+  //             break;
+  //           }
+  //         } else if (
+  //           key === "stemGirth" ||
+  //           key === "stemShape" ||
+  //           key === "veilType"
+  //         ) {
+  //           if (key === "veilType" && selected[key] === "none") {
+  //             if (
+  //               mushroom["stipe"].includes("partial") &&
+  //               mushroom["stipe"].includes("universal")
+  //             ) {
+  //               matchesAllCriteria = false; // If color, condition, or viscos is missing, exclude mushroom
+  //               break;
+  //             }
+  //           }
+  //           if (!mushroom["stipe"].includes(selected[key])) {
+  //             matchesAllCriteria = false; // If color, condition, or viscos is missing, exclude mushroom
+  //             break;
+  //           }
+  //         } else if (mushroom[key] !== selected[key]) {
+  //           matchesAllCriteria = false; // If any other key does not match, exclude mushroom
+  //           break;
+  //         }
+  //       }
+  //     }
+  //     return matchesAllCriteria; // Include mushroom if it matches all criteria
+  //   });
+
+  //   setMushrooms(newSetMushroom);
+  // };
 
   const handleCapConditionChange = (event) => {
     const value = event.target.value;
