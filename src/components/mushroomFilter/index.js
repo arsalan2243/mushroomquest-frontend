@@ -9,7 +9,7 @@ import axiosWithAuth from "../../helpers/axiosWithAuth";
 const Mushroom = () => {
   const [selected, setSelected] = useState({});
   const [mushroomsData, setMushroomsData] = useState([]);
-  const [mushrooms, setMushrooms] = useState([]); // Your mushroom data here
+  const [mushrooms, setMushrooms] = useState([]); // mushroom datae
 
   useEffect(() => {
     axiosWithAuth()
@@ -70,7 +70,7 @@ const Mushroom = () => {
     });
 
     setMushrooms(newSetMushroom);
-  }, [selected]);
+  }, [selected,mushroomsData]);
 
   const handleRadioChange = (event) => {
     const value = event.target.value;
